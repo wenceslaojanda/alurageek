@@ -1,0 +1,156 @@
+{
+  "productos": [
+    {
+      "id": "faeeb5ce-1f4a-4fa7-bd9e-dc4286947e07",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.01,
+      "imagen": "1starwars.svg",
+      "categoria": "Star Wars"
+    },
+    {
+      "id": "0af728e9-a5ef-4d7a-910e-f8e815c93c6c",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.02,
+      "imagen": "2starwars.svg",
+      "categoria": "Star Wars"
+    },
+    {
+      "nombre": "Producto DEL ATE",
+      "descripcion": "Descripcion producto 1 del ate",
+      "precio": "60.03",
+      "imagen": "3starwars.svg",
+      "categoria": "Star Wars",
+      "id": "623b09f6-cb48-4eb5-a123-a2e89d4e7040"
+    },
+    {
+      "id": "4e0c87bb-9e51-434f-9654-1359e369443f",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.04,
+      "imagen": "4starwars.svg",
+      "categoria": "Star Wars"
+    },
+    {
+      "id": "67ddeeee-71f7-4b5a-b05d-597f2d24ecec",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.05,
+      "imagen": "5starwars.svg",
+      "categoria": "Star Wars"
+    },
+    {
+      "id": "d6f9a80e-184a-4112-b1be-fb2765c2ce86",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.06,
+      "imagen": "6starwars.svg",
+      "categoria": "Star Wars"
+    },
+    {
+      "id": "ce40bbcc-698c-42e2-9b10-205057ef9f98",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.01,
+      "imagen": "1consolas.svg",
+      "categoria": "Consolas"
+    },
+    {
+      "id": "7b24e343-e2f3-4006-8c3e-242fbca13925",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.02,
+      "imagen": "2consolas.svg",
+      "categoria": "Consolas"
+    },
+    {
+      "id": "1960b2e5-9eb8-4b2d-a8bb-a8c92c1416fe",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.03,
+      "imagen": "3consolas.svg",
+      "categoria": "Consolas"
+    },
+    {
+      "id": "41f592e2-dd81-4699-ab69-96030163915e",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.04,
+      "imagen": "4consolas.svg",
+      "categoria": "Consolas"
+    },
+    {
+      "id": "5a6d4d8a-f84a-401f-859c-dbbd7e6e3a68",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.05,
+      "imagen": "5consolas.svg",
+      "categoria": "Consolas"
+    },
+    {
+      "id": "16024e64-d0c0-424e-a05e-ed562593a959",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.06,
+      "imagen": "6consolas.svg",
+      "categoria": "Consolas"
+    },
+    {
+      "id": "82edb15e-ccee-4fb5-8414-0b22e5a40703",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.01,
+      "imagen": "1diversos.svg",
+      "categoria": "Diversos"
+    },
+    {
+      "id": "0965c5da-d55b-445a-ba87-87ffe7d0b5f3",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.02,
+      "imagen": "2diversos.svg",
+      "categoria": "Diversos"
+    },
+    {
+      "id": "4bcbb111-6dbc-4492-a924-d72c536dc528",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.03,
+      "imagen": "3diversos.svg",
+      "categoria": "Diversos"
+    },
+    {
+      "id": "b7b06619-642f-4b20-b3a0-ee90c7717424",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.04,
+      "imagen": "4diversos.svg",
+      "categoria": "Diversos"
+    },
+    {
+      "id": "b0c18846-6337-4621-a119-41942f7ac840",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.05,
+      "imagen": "5diversos.svg",
+      "categoria": "Diversos"
+    },
+    {
+      "id": "cbb1b72b-e89e-4276-8cb4-709e972864b0",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.06,
+      "imagen": "6diversos.svg",
+      "categoria": "Diversos"
+    },
+    {
+      "id": "b898af45-6d64-4b1b-8704-b51e92c5f787",
+      "nombre": "Producto XYZ",
+      "descripcion": "Descripcion producto 1",
+      "precio": 60.06,
+      "imagen": "6diversos.svg",
+      "categoria": "El ate"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+    "productos": [
+        {
+            "categoria": "Star Wars",
+            "productos": [
+                {
+                    "id": 1,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.01,
+                    "imagen": "1starwars.svg",
+                    "categoria": "consolas"
+                }, 
+                {
+                    "id": 2,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.02,
+                    "imagen": "2starwars.svg",
+                    "categoria": "consolas"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.03,
+                    "imagen": "3starwars.svg",
+                    "categoria": "consolas" }, 
+                {
+                    "id": 4,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.04,
+                    "imagen": "4starwars.svg",
+                    "categoria": "consolas"
+                },
+                {
+                    "id": 5,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.05,
+                    "imagen": "5starwars.svg",
+                    "categoria": "consolas" }, 
+                {
+                    "id": 6,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.06,
+                    "imagen": "6starwars.svg",
+                    "categoria": "consolas"
+                },
+                {
+                    "id": 7,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.07,
+                    "imagen": "5starwars.svg",
+                    "categoria": "consolas" }, 
+                {
+                    "id": 8,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.08,
+                    "imagen": "6starwars.svg",
+                    "categoria": "consolas"
+                }
+            ]
+        },
+        {
+            "categoria": "Consolas",
+            "productos": [
+                {
+                    "id": 1,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.01,
+                    "imagen": "1consolas.svg",
+                    "categoria": "consolas" }, 
+                {
+                    "id": 2,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.02,
+                    "imagen": "2consolas.svg",
+                    "categoria": "consolas"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.03,
+                    "imagen": "3consolas.svg",
+                    "categoria": "consolas" }, 
+                {
+                    "id": 4,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.04,
+                    "imagen": "4consolas.svg",
+                    "categoria": "consolas"
+                },
+                {
+                    "id": 5,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.05,
+                    "imagen": "5consolas.svg",
+                    "categoria": "consolas" }, 
+                {
+                    "id": 6,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.06,
+                    "imagen": "6consolas.svg",
+                    "categoria": "consolas"
+                }
+            ]
+    },{
+            "categoria": "Diversos",
+            "productos": [
+                {
+                    "id": 1,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.01,
+                    "imagen": "1diversos.svg",
+                    "categoria": "consolas" }, 
+                {
+                    "id": 2,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.02,
+                    "imagen": "2diversos.svg",
+                    "categoria": "consolas"
+                },
+                {
+                    "id": 3,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.03,
+                    "imagen": "3diversos.svg",
+                    "categoria": "consolas" }, 
+                {
+                    "id": 4,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.04,
+                    "imagen": "4diversos.svg",
+                    "categoria": "consolas"
+                },
+                {
+                    "id": 5,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.05,
+                    "imagen": "5diversos.svg",
+                    "categoria": "consolas" }, 
+                {
+                    "id": 6,
+                    "nombre": "Producto XYZ",
+                    "descripcion": "Descripcion producto 1",
+                    "precio": 60.06,
+                    "imagen": "6diversos.svg",
+                    "categoria": "consolas"
+                }
+            ]
+    }]
+}
