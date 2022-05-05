@@ -1,9 +1,9 @@
-const listaProductos = () => fetch("https://wenceslaojanda.github.io/alurageek/productos").then((respuesta) => respuesta.json());
+const listaProductos = () => fetch("https://wenceslao-alura-geek.herokuapp.com/productos").then((respuesta) => respuesta.json());
 
-const listaCategoria = () => fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
+const listaCategoria = () => fetch("https://wenceslao-alura-geek.herokuapp.com/productos").then((respuesta) => respuesta.json());
 
 const crearProducto = (nombre, descripcion, precio, imagen, categoria) => {
- return fetch("http://localhost:3000/productos", {
+ return fetch("https://wenceslao-alura-geek.herokuapp.com/productos", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -13,11 +13,11 @@ const crearProducto = (nombre, descripcion, precio, imagen, categoria) => {
 };
 
 const detalleProducto = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`).then((respuesta) => respuesta.json());
+    return fetch(`https://wenceslao-alura-geek.herokuapp.com/productos/${id}`).then((respuesta) => respuesta.json());
 };
 
 const actualizarProducto = (id, nombre, descripcion, precio, imagen, categoria) => {
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://wenceslao-alura-geek.herokuapp.com/productos/${id}`, {
         method: 'PUT',
         headers: {
             "Content-Type": "application/json"
