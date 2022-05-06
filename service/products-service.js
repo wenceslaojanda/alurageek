@@ -27,12 +27,19 @@ const actualizarProducto = (id, nombre, descripcion, precio, imagen, categoria) 
     .catch((err) => console.log(err));
 } 
 
+ const eliminarProducto = (id) => {
+    return fetch(`https://wenceslao-alura-geek.herokuapp.com/productos/${id}`,{
+        method: 'DELETE',
+    });
+}
+
 export const productServices = {
     listaProductos, 
     listaCategoria,
     crearProducto,
     detalleProducto,
     actualizarProducto,
+    eliminarProducto,
 }
 
 

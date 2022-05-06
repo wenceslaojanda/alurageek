@@ -25,7 +25,7 @@ const mostrarProductosSimilares = (productos) => {
     productos.forEach(producto => {
         cards += `
                     <div class="products-card">
-                        <img class="products-img" src="../assets/images/section/${producto.imagen}" alt="consola image">
+                        <img class="products-img" src="${producto.imagen}" alt="consola image">
                         <h4>${producto.nombre}</h4>
                         <p class="products-price">${producto.precio}</p>
                         <a class="link" href="./product-detail.html?id=${producto.id}">Ver producto</a>
@@ -45,7 +45,7 @@ const obtenerInformacion = () => {
     const productText = document.querySelector(".product-detail-text");
 
     productServices.detalleProducto(id).then((producto) => {
-        productImg.setAttribute("src",`../assets/images/section/${producto.imagen}`);
+        productImg.setAttribute("src",`${producto.imagen}`);
         productName.innerText = producto.nombre;
         productPrice.innerText = producto.precio;
         productText.innerText = producto.descripcion;

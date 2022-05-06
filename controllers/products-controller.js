@@ -66,7 +66,7 @@ function crearTarjetasProductos(productos) {
         console.log(id, nombre, descripcion, precio, imagen, categoria);
         cards += `
             <div class="products-card">
-                <img class="products-img" src="./assets/images/section/${imagen}" alt="star wars image">
+                <img class="products-img" src="${imagen}" alt="star wars image">
                 <h4>${nombre}</h4>
                 <p class="products-price">$${precio}</p>
                 <a class="link" href="./screens/product-detail.html?id=${id}" data-id="${id}">Ver producto</a>

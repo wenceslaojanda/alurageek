@@ -35,6 +35,11 @@
     color: #2A7AE4;
 }
 
+.delete-icons{
+    background: transparent;
+    border: none;
+}
+
 @media screen and (min-width: 768px) {
     .all-products .products-header {
         display: flex;
