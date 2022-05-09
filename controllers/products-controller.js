@@ -1,5 +1,11 @@
 import { productServices } from "../service/products-service.js"
 
+const btnBanner = document.querySelector(".btn-banner");
+btnBanner.addEventListener("click" , () => {
+    const sectionConsola = document.querySelector("#Consolas");
+    sectionConsola.scrollIntoView();
+});
+
 productServices.listaProductos().then((data) => {
     let sections = {};
     data.forEach((producto) => {
@@ -28,6 +34,7 @@ productServices.listaProductos().then((data) => {
  */
 function crearNuevaSeccion(categoria, productos) {
     const section = document.createElement('section');
+    section.setAttribute("id",categoria);
     
     const container = document.createElement('div');
     container.classList.add('container');
