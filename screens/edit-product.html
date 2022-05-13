@@ -34,6 +34,8 @@
                 </div>
                 <div class="header-login">
                     <button class="btn header-btn-login">Login</button>
+                    <span class="login-info no-display"></span>
+                    <button class="btn btn-cerrar-sesion no-display" type="submit">Cerrar sesión</button>
                 </div>
             </div>
         </div>
@@ -52,18 +54,18 @@
                     </div>
 
                     <div class="arrastra-container">
-                        <div class="arrastra-img img-arrastra">
-                            <i class="fa-solid fa-image preview-i"></i>
-                            <h4 class = "preview-h4">Arrastre para agregar una imágen para el producto</h4>
-                            <img class = "preview-img">
+                        <div class="arrastra-img img-arrastra" data-cuadro draggable="true">
+                            <div data-clear>
+                                <i class="fa-solid fa-image preview-i"></i>
+                                <h4 class = "preview-h4">Arrastre para agregar una imágen para el producto</h4>
+                                <!-- <img class = "preview-img"> -->
+                            </div>
                         </div>
                         <span>O</span>
                         <div class="file-select input-container" id="src-img" >
                             <input data-img type="file" class = "img-file input" name="src-img" accept="image/*" aria-label="Archivo"  data-tipo="archivo"/><br>
                             <span class="input-message-error img-error">Este campo no es valido</span>
                         </div>
-                        
-                       <!--  <button class="btn">Busque en su dispositivo</button> -->
                     </div>
 
                     <div class="input-container">
@@ -77,10 +79,8 @@
 
                     <div class="input-container">
                     <select data-select class="add-product-input input" name="select" required>
-<!--                         <option value="Star Wars">Star Wars</option>
-                        <option value="Consolas">Consolas</option>
-                        <option value="Diversos">Diversos</option> -->
-                      </select>
+
+                    </select>
                       <span class="input-message-error">Este campo no es valido</span>
                     </div>
 
@@ -94,7 +94,7 @@
                     </div>
 
                     
-                    <button class="btn button-submit button-submit-add" >Agregar Producto</button>
+                    <button class="btn button-submit button-submit-add" >Editar Producto</button>
                 </form>
             </div>
         </div>

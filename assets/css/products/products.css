@@ -31,6 +31,12 @@
     margin-bottom: 1.5rem;
 }
 
+.products-img {
+    min-width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
     .products-container {
         grid-template-columns: repeat(4, 1fr);

@@ -1,5 +1,14 @@
 import { productServices } from "../service/products-service.js"
 
+(function () {
+    const emailSession = sessionStorage.getItem('email');
+    if(emailSession == null) {
+        window.location.href = "./login.html";
+    }
+})();
+
+
+
 const btnAgregarProducto = document.querySelector(".btn-agregar-producto");
 btnAgregarProducto.addEventListener("click", () => {
     window.location.href = "./add-product.html";

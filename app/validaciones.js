@@ -1,4 +1,3 @@
-
 export function valida(input, inputs, button) {
     
     const tipoDeInput = input.dataset.tipo;
@@ -39,6 +38,7 @@ function submitControler(inputs, button) {
             count++;
     });
 
+    
     if(count == inputs.length){
         button.classList.remove("button-disabled");
         button.disabled = false;

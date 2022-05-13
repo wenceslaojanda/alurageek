@@ -1,9 +1,5 @@
 import { productServices } from "../service/products-service.js";
 
-/* const params = window.location.search;
-const urlParams = new URLSearchParams(params);
-const id = urlParams.get("id"); */
-
 const productosSimilares = (categoria, id) => {
     let productSimil = [];
     productServices.listaProductos().then((data) => {

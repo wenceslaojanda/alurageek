@@ -23,15 +23,6 @@ productServices.listaProductos().then((data) => {
     }
 })
 
-/* productServices.listaProductos().then((data) => {
-    data.forEach((categoria) => {
-        const nuevaSeccion = crearNuevaSeccion(categoria.categoria, categoria.productos);
-        const productos = document.querySelector(".productos");
-        productos.appendChild(nuevaSeccion);
-        
-    })
-})
- */
 function crearNuevaSeccion(categoria, productos) {
     const section = document.createElement('section');
     section.setAttribute("id",categoria);
@@ -46,7 +37,7 @@ function crearNuevaSeccion(categoria, productos) {
     productHeader.classList.add('products-header');
 
     const productHeaderContent = `<h2>${categoria}</h2>
-        <a class="link" href="./screens/all-products.html">Ver todo <i class="fa-solid fa-arrow-right"></i></a>`;
+        <a class="link" href="./screens/products.html?q="${''}>Ver todo <i class="fa-solid fa-arrow-right"></i></a>`;
 
     productHeader.innerHTML = productHeaderContent;
 
@@ -70,7 +61,6 @@ function crearTarjetasProductos(productos) {
     productos.forEach(producto => {
         
         const {id, nombre, descripcion, precio, imagen, categoria  } = producto;
-        console.log(id, nombre, descripcion, precio, imagen, categoria);
         cards += `
             <div class="products-card">
                 <img class="products-img" src="${imagen}" alt="star wars image">

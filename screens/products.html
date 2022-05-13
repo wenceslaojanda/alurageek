@@ -4,12 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-    crossorigin="anonymous"></script>
-    
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,10 +15,6 @@
     <link rel="stylesheet" href="../assets/css/products/products.css">
     <link rel="stylesheet" href="../assets/css/contact/contact.css">
     <link rel="stylesheet" href="../assets/css/footer/footer.css">
-    <link rel="stylesheet" href="../assets/css/all-products/all-products.css">
-
-    <link rel="stylesheet" href="../assets/css/modal/modal.css">
-    
 
     <title>AluraGeek - All Products</title>
 </head>
@@ -34,7 +24,7 @@
     <div class="container">
         <div class="header-container">
             <div class="header-logo">
-                <a href="../index.html">
+                <a href="/index.html">
                     <h1>
                         <img class="header-icon1" src="../assets/images/logo.svg" alt="logo AluraGeek">
                         <img class="header-icon2" src="../assets/images/alura.svg" alt="alura image">
@@ -49,7 +39,7 @@
             </div>
             
             <div class="header-login">
-                <button class="header-btn-login" type="submit">Login</button>
+                <a href="../screens/login.html"><button class="header-btn-login" type="submit">Login</button></a>
                 <span class="login-info no-display"></span>
                 <button class="btn btn-cerrar-sesion no-display" type="submit">Cerrar sesión</button>
             </div>
@@ -57,21 +47,22 @@
     </div>
 </header>
 
-<main>
+<main class="main">
     
-    <section class="all-products">
+<div class="productos">
+    <section class="busqueda">
         <div class="container">
-            <div class="products-category">   
+            <div class="products-category">
                 <div class="products-header">
-                    <h2>Todos los productos</h2>
-                    <button class="btn btn-agregar-producto">Agregar producto</button>
+                    <h2>Todos los productos:</h2>
                 </div>
-                <div class="products-container">
-                   
-                </div>
+                <div class="products-container"></div>
             </div>
+
         </div>
     </section>
+</div>
+    
 
     <section class="contact">
         <div class="container">
@@ -107,6 +98,7 @@
                         <button class="btn button-submit button-submit-contact button-disabled" disabled>Enviar Mensaje</button>
                     </form>    
                 </div>
+
             </div>
         </div>    
     </section>
@@ -131,13 +123,7 @@
     <div><a href="mailto:wenchojanda@gmail.com">&copy;Wenceslao Janda</a></div>
   </footer>
 
-
-  <div class="modal" id="b">
-
-  </div>
-
-
-  <script src="../app/app.js " type="module"></script>
-  <script type="module" src="../controllers/all-product-controller.js"></script>
+  <script src="../app/app.js" type="module"></script>
+  <script type="module" src="../controllers/search-controller.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../assets/css/footer/footer.css">
     <link rel="stylesheet" href="../assets/css/login/login.css">
 
-    <title>AluraGeek-Login</title>
+    <title>AluraGeek - Login</title>
 </head>
 <body>
     
@@ -39,6 +39,8 @@
             
             <div class="header-login">
                 <button class="header-btn-login" type="submit">Login</button>
+                <span class="login-info no-display"></span>
+                <button class="btn btn-cerrar-sesion no-display" type="submit">Cerrar sesión</button>
             </div>
         </div>
     </div>
@@ -49,17 +51,17 @@
     <section class="login">
         <div class="container">
             <div class="login-container">
-                <form action="">
+                <form action="" data-form>
                 <h3>Iniciar Sesión</h3>
                 <div class="input-container">
-                    <input id="email" class="login-input input" type="email" placeholder="Escriba su correo electrónico" required pattern="^[\w]+@{1}[\w]+\.[a-z]{2,3}$" data-tipo="email">
+                    <input id="email" class="login-input " type="email" placeholder="Escriba su correo electrónico" required pattern="^[\w]+@{1}[\w]+\.[a-z]{2,3}$" data-tipo="email">
                     <span class="input-message-error">Este campo no es valido</span>
                 </div>
                 <div class="input-container">
-                    <input id="password" class="login-input input" type="password" placeholder="Escriba su contraseña" required pattern="^(?=.{8,16}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$" data-tipo="password" maxlength="16">
+                    <input id="password" class="login-input " type="password" placeholder="Escriba su contraseña" required pattern="^(?=.{8,16}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$" data-tipo="password" maxlength="16">
                     <span class="input-message-error">Este campo no es valido</span>
                 </div>
-                <button class="btn btn-login">Entrar</button>
+                <button class="btn btn-login button-disabled" disabled>Entrar</button>
             </form>
             </div>
         </div>
@@ -124,5 +126,6 @@
   </footer>
 
   <script src="../app/app.js" type="module"></script>
+  <script type="module" src="../controllers/users-controller.js"></script>
 </body>
 </html>

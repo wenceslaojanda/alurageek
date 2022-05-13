@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="../assets/css/footer/footer.css">
     <link rel="stylesheet" href="../assets/css/login/login.css">
     <link rel="stylesheet" href="../assets/css/add-product/add-product.css">
+    <link rel="stylesheet" href="../assets/css/card/card.css">
 
-    <title>AluraGeek-Add Product</title>
+    <title>AluraGeek - Producto Editado</title>
 </head>
 <body>
     
@@ -33,9 +34,9 @@
                     <a href=""><i class="header-lens fa fa-magnifying-glass"></i></a>
                 </div>
                 <div class="header-login">
-                    <button class="btn header-btn-login">Login</button>
+                    <a href="./screens/login.html"><button class="header-btn-login" type="submit">Login</button></a>
                     <span class="login-info no-display"></span>
-                <button class="btn btn-cerrar-sesion no-display" type="submit">Cerrar sesión</button>
+                    <button class="btn btn-cerrar-sesion no-display" type="submit">Cerrar sesión</button>
                 </div>
             </div>
         </div>
@@ -45,56 +46,10 @@
     
     <section class="add-product">
         <div class="container">
-            <div class="add-product-container">
-                <form  action="" data-form>    
-                    <h3>Agregar nuevo producto</h3>
-                    <div class="arrastra-img hidden">
-                        <i class="fa-solid fa-plus"></i>
-                        <h4>Agregar una imágen para el producto</h4>
-                    </div>
-
-                    <div class="arrastra-container">
-                        <div class="arrastra-img img-arrastra" data-cuadro draggable="true">
-                            <div data-clear>
-                                <i class="fa-solid fa-image preview-i"></i>
-                                <h4 class = "preview-h4">Arrastre para agregar una imágen para el producto</h4>
-                            </div>
-                        </div>
-                        <span>O</span>
-                        <div class="file-select input-container" id="src-img" >
-                            <input data-img type="file" class = "img-file input" name="src-img" accept="image/*" aria-label="Archivo" data-tipo="archivo"/><br>
-                            <span class="input-message-error img-error">Este campo no es valido</span>
-                        </div>
-                    </div>
-
-                    <div class="input-container">
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-
-                    <div class="input-container">
-                        <input data-nombre class="add-product-input input" name="nombre-producto" type="text" placeholder="Nombre del producto" required data-tipo="nombre" maxlength="20">
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-
-                    <div class="input-container">
-                    <select data-select class="add-product-input input" name="select" required>
-
-                    </select>
-                      <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-
-                    <div class="input-container">
-                        <input data-precio class="add-product-input input" type="text"  pattern = "^\d+(\.\d{1,2})?$" placeholder="Precio del producto" required data-tipo="numero">
-                        <span class="input-message-error">Este campo no debe estar vacio </span>
-                    </div>
-                    <div class="input-container">
-                        <textarea data-descripcion class="add-product-input input" name="descripcion-producto" id="" cols="30" rows="10" placeholder="Descripción del producto" data-tipo="descripcion" maxlength="150" required></textarea>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-
-                    
-                    <button class="btn button-submit button-submit-add button-disabled" disabled>Agregar Producto</button>
-                </form>
+            <div class="card">
+                <i class="fa fa-clipboard-check"></i>
+                <h2 class="title">Producto editado con éxito</h2>
+                <a class="button" href="./all-products.html">Regresar</a>
             </div>
         </div>
     </section>
@@ -160,6 +115,6 @@
 
   <script src="../app/app.js" type="module"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="../controllers/add-product-controller.js"></script>
+  <script src="../controllers/form-submited-controller.js"></script>
 </body>
 </html>

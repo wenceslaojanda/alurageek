@@ -5,6 +5,36 @@ let path = window.location.pathname;
 const inputContact = document.querySelectorAll(".input-contact");
 const buttonSubmitContact = document.querySelector(".button-submit-contact");
 const buttonSubmitAdd = document.querySelector(".button-submit-add");
+const inputLogin = document.querySelectorAll('.login-input');
+const buttonLogin = document.querySelector('.btn-login');
+const buttonLoginHeader = document.querySelector('.header-btn-login');
+const loginInfo = document.querySelector('.login-info');
+const buttonCerrarSesion = document.querySelector('.btn-cerrar-sesion');
+const inputSearch = document.querySelector('.header-input--search');
+const btnLogin = document.querySelector(".header-btn-login");
+const btnBanner = document.querySelector(".btn-banner");
+
+(function () {
+    const emailSession = sessionStorage.getItem('email');
+    if(emailSession) {
+        buttonLoginHeader.classList.add("no-display");
+        loginInfo.textContent = `Hola, ${emailSession}`;
+        loginInfo.classList.remove('no-display');
+        buttonCerrarSesion.classList.remove('no-display');
+    }
+})();
+
+buttonCerrarSesion.addEventListener('click', () => {
+    sessionStorage.removeItem('email');
+    window.location.href = '/index.html';
+});
+
+inputSearch.addEventListener('keydown', (e) =>{
+    if(e.key == 'Enter'){
+        const busqueda = inputSearch.value;
+        window.location.href = `/screens/search.html?q=${busqueda}`;
+    }
+});
 
 inputs.forEach(input => {
     if(input.type == "file"){
@@ -39,9 +69,15 @@ inputContact.forEach(input => {
     
 }); 
 
-
-const btnLogin = document.querySelector(".header-btn-login");
-const btnBanner = document.querySelector(".btn-banner");
+inputLogin.forEach(input => {
+    
+    input.addEventListener("blur", (input) => {
+        valida(input.target, inputLogin, buttonLogin);
+    });
+    input.addEventListener("keyup", (input) => {
+        valida(input.target, inputLogin, buttonLogin);
+    });
+});
 
 btnLogin.addEventListener("click", e => {
     window.location.href = "login.html";
@@ -53,41 +89,6 @@ if(path == "/" || path == "/index.html"){
 });
 }
 
-const imgFile = document.querySelector(".img-file");
-const previewI = document.querySelector(".preview-i");
-const previewH4 = document.querySelector(".preview-h4");
-let previewImg = document.querySelector(".preview-img");
-
-if(path == "/screens/add-product.html"){
-    imgFile.addEventListener("change", event => {
-        showPreview(event);
-    });
-}
-
-function showPreview(event){
-    
-    if(event.target.files.length > 0){
-      let src = URL.createObjectURL(event.target.files[0]);
-      console.log(event.target.files[0]);
-      console.log(src);
-      previewImg.src = src;
-      previewImg.style.display = "block";
-      previewI.classList.add("no-display");
-      previewH4.classList.add("no-display");
-      
-      previewI.classList.remove("display");
-      previewH4.classList.remove("display");
-      return;
-    } 
-
-    previewI.classList.remove("no-display");
-    previewI.classList.add("display");
-    previewH4.classList.remove("no-display");
-    previewH4.classList.add("display");
-    previewImg.src = "";
-    previewImg.style.display = "none";
-    
-}
 
 
 

@@ -148,12 +148,12 @@
   ],
   "usuarios": [
       {
-        "email": "elate@gmail.com",
-        "password": "Elate123!"
+        "email": "alura@alura.com",
+        "password": "Alura2022!"
       },
       {
-        "email": "elotroate@gmail.com",
-        "password": "Elotroate123!"
+        "email": "alura@gmail.com",
+        "password": "Alura2022!"
       }
   ]
   
