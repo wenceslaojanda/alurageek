@@ -32,7 +32,7 @@ buttonCerrarSesion.addEventListener('click', () => {
 inputSearch.addEventListener('keydown', (e) =>{
     if(e.key == 'Enter'){
         const busqueda = inputSearch.value;
-        window.location.href = `/screens/search.html?q=${busqueda}`;
+        window.location.href = `/alurageek/screens/search.html?q=${busqueda}`;
     }
 });
 
