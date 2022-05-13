@@ -26,7 +26,7 @@ const btnBanner = document.querySelector(".btn-banner");
 
 buttonCerrarSesion.addEventListener('click', () => {
     sessionStorage.removeItem('email');
-    window.location.href = '/index.html';
+    window.location.href = '/alurageek/index.html';
 });
 
 inputSearch.addEventListener('keydown', (e) =>{
