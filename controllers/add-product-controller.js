@@ -36,7 +36,6 @@ imgFile.addEventListener("change", event => {
         processFile(file);
     }
 });
-//cuadro.addEventListener("click", importData);
 
 var imgPath = null;
 
@@ -47,7 +46,6 @@ const processFile = (file) => {
     const fileReader = new FileReader();
     fileReader.addEventListener("load", (e) => {
       const fileUrl = fileReader.result;
-      console.log(fileUrl);
       const clear = document.querySelector("[data-clear]");
       imgPath = fileUrl;
       cuadro.style.backgroundImage = `url(${fileUrl})`;
@@ -97,7 +95,7 @@ formulario.addEventListener("submit", async (e) => {
     const selectValue = document.querySelector("[data-select]").value;
 
     await productServices.crearProducto(nombreValue, descripcionValue, precioValue, imgData, selectValue).then( (respuesta) => {
-        console.log(respuesta);
+    
     })
     .catch((err) => console.log(err));
 
